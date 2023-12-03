@@ -11,11 +11,7 @@ import (
 
 func RunPart01() {
 	sum := 0
-	wd, err := os.Getwd()
-	if err != nil {
-		log.Fatal(err)
-	}
-	fmt.Println(wd)
+
 	f, err := os.Open("./day01/day01.txt")
 	if err != nil {
 		log.Fatalf("Error: %v", err)
